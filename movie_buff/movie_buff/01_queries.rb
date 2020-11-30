@@ -74,6 +74,6 @@ def movie_names_before_1940
   # Use pluck to find the title of all movies made before 1940.
   Movie
     .where('yr < 1940').pluck(:title)
-    # .select(:title).where('yr < 1940').pluck
+    # .select(:title).where('yr < 1940').pluck ASK Why doesnt the pluck work?
 
 end
